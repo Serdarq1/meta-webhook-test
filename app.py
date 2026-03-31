@@ -1,10 +1,10 @@
 import os
-from fastapi import FastApi, Request, HTTPException
+from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import PlainTextResponse, JSONResponse
 from dotenv import load_dotenv
 
 load_dotenv()
-app = FastApi()
+app = FastAPI()
 
 VERIFY_TOKEN=os.getenv("META_VERIFY_TOKEN")
 
